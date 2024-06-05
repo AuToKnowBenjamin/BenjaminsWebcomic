@@ -3,14 +3,49 @@
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
+  max-width: 2000px;
+  max-height: 2500px;
+  position: right;
   margin: auto;
+  border-width: 50px;
+  border-style: solid;
+  border-color: #9B2525;
 }
 
 /* Hide the images by default */
 .mySlides {
   display: none;
+}
+
+
+
+h1 {
+  background-image: url(The.png), url(Cycle.png), url(portal.png);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 450px 20px, 900px 20px, -100px -380px;
+  Background-size: 435px 236px, 435px 236px, 1920px 1080px;
+  width: 1920px;
+  height: 300px;
+}
+
+.column1 {
+  float: left;
+  width: 600px;
+  height: 2050px;
+  top: 307px;
+  background-color: #812020;
+  position: absolute
+}
+
+
+.column2 {
+  float: right;
+  width: 1320px;
+  height: 2050px;
+  left: 507px;
+  top: 307px;
+  background-color: #812020;
+  position: absolute;
 }
 
 /* Next & previous buttons */
@@ -35,10 +70,61 @@
   border-radius: 3px 0 0 3px;
 }
 
+.first {
+  position:absolute;
+  left: 100px;
+  bottom: 10px;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 60px;
+  background-color: #471212;
+}
+.prevpage {
+  position:absolute;
+  left: 300px;
+  bottom: 10px;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 60px;
+  background-color: #471212;
+  
+}
+
+.archive {
+  position:absolute;
+  left: 610px; 
+  bottom: 10px;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 60px;
+  background-color: #471212;
+}
+
+.nextpage {
+  position:absolute;
+  right: 300px;
+  bottom: 10px;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 60px;
+  background-color: #471212;
+}
+
+.last {
+  position:absolute;
+  right: 135px;
+  bottom: 10px;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 60px;
+  background-color: #471212;
+}
+
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
+
 
 /* Caption text */
 .text {
@@ -97,11 +183,13 @@
  }
 </style>
 
-<h1 class="comicTitle">My Web Comic</h1>
-<h2> test test test!</h2>
-<p class="myDescription">
- descibe your comic series here.
-</p>
+<h1 class="comicTitle">The Cycle</h1>
+
+
+  <div class="column1">hii
+    <img src="instalogo.png">
+    </div>
+  <div class="column2">
 
 <!-- Slideshow container -->
 <div class="slideshow-container">
@@ -109,8 +197,8 @@
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
     <div class="numbertext"></div>
-    <img src="comicpageONE.png" style="width:100%">
-    <div class="text">Caption Text</div>
+    <img src="Sc2_1.png" style="width:100%">
+    <div class="text"></div>
   </div>
 
   <div class="mySlides fade">
@@ -129,12 +217,25 @@
     <div class="numbertext"></div>
     <img src="chikorita prac.png" style="width:100%">
     <div class="text">Caption Four</div>
+    </div>
+  </div> 
+
+  <div class="row">
+    <a class="first" onclick="plusSlides(100)">First</a>
+    <a class="prevpage" onclick="plusSlides(-1)">Previous</a>
+    <a class="archive" >Archive</a>
+    <a class="nextpage" onclick="plusSlides(1)">Next</a>
+    <a class="last" onclick="plusSlides(-100)">Last</a>
   </div>
 
   <!-- Next and previous buttons -->
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
+<div class="row2">
+  
+</div>
+</p>
 <br>
 
 <!-- The dots/circles -->
