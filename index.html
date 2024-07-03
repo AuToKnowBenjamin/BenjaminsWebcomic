@@ -16,8 +16,36 @@
 .mySlides {
   display: none;
 }
+.patreonlogo {
+  Position: absolute;
+  Left: 45px;
+  Top: 500px;
+}
 
+.numbertext {
+  color: black;
+}
 
+.instagramlogo {
+  Position: absolute;
+  Left: 45px;
+  Top: 50px;
+  
+}
+
+.annkokuimage {
+  position: absolute;
+  Left: 45px;
+  Top: 1000px;
+  border-color: #360a07;
+  border-style: Solid;
+  border-width: 10px
+  
+}
+
+body {
+  background-color: #360a07;
+}
 
 h1 {
   background-image: url(The.png), url(Cycle.png), url(portal.png);
@@ -81,7 +109,7 @@ h1 {
 }
 .prevpage {
   position:absolute;
-  left: 300px;
+  left: 380px;
   bottom: 10px;
   color: white;
   font-family: 'Courier New', Courier, monospace;
@@ -90,19 +118,10 @@ h1 {
   
 }
 
-.archive {
-  position:absolute;
-  left: 610px; 
-  bottom: 10px;
-  color: white;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 60px;
-  background-color: #471212;
-}
 
 .nextpage {
   position:absolute;
-  right: 300px;
+  right: 400px;
   bottom: 10px;
   color: white;
   font-family: 'Courier New', Courier, monospace;
@@ -139,10 +158,11 @@ h1 {
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
+  color: white;
+  font-size: 30px;
   padding: 8px 12px;
   position: absolute;
+  background-color:#360a07;
   top: 0;
 }
 
@@ -182,13 +202,27 @@ h1 {
     font-size: 510%;
  }
 </style>
-
+<body>
+<div class="sitecontent"> 
 <h1 class="comicTitle">The Cycle</h1>
 
 
   <div class="column1">hii
-    <img src="instalogo.png">
+    <a href="https://www.instagram.com/the_cycle_comic/">
+    <div class="instagramlogo">
+      <img src="instalogo.png" style="width:75%" style="height:75%">
+    </a>
     </div>
+    <a href="https://www.patreon.com/thecyclecomic/creators?utm_campaign=creatorshare_creator&utm_content=copyLink&utm_medium=unknown&utm_source=join_link">
+    <div class="patreonlogo">
+      <img src="patreonlogo.png" style="width:75%" style="height:75%">
+    </a>
+    </div>
+    <div class="Annkokuimage">
+      <img src="Annkoku.png">
+    </div>
+  </div>
+
   <div class="column2">
 
 <!-- Slideshow container -->
@@ -196,25 +230,25 @@ h1 {
 
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
-    <div class="numbertext"></div>
+    <div class="numbertext">1</div>
     <img src="Sc2_1.png" style="width:100%">
     <div class="text"></div>
   </div>
 
   <div class="mySlides fade">
-    <div class="numbertext"></div>
+    <div class="numbertext">2</div>
     <img src="comicpageTWO.png" style="width:100%">
     <div class="text">Caption Two</div>
   </div>
 
   <div class="mySlides fade">
-    <div class="numbertext"></div>
+    <div class="numbertext">3</div>
     <img src="flygon poke tongue.png" style="width:100%">
     <div class="text">Caption Three</div>
   </div>
 
   <div class="mySlides fade">
-    <div class="numbertext"></div>
+    <div class="numbertext">4</div>
     <img src="chikorita prac.png" style="width:100%">
     <div class="text">Caption Four</div>
     </div>
@@ -223,7 +257,6 @@ h1 {
   <div class="row">
     <a class="first" onclick="plusSlides(100)">First</a>
     <a class="prevpage" onclick="plusSlides(-1)">Previous</a>
-    <a class="archive" >Archive</a>
     <a class="nextpage" onclick="plusSlides(1)">Next</a>
     <a class="last" onclick="plusSlides(-100)">Last</a>
   </div>
@@ -236,6 +269,8 @@ h1 {
   
 </div>
 </p>
+</body>
+</div>
 <br>
 
 <!-- The dots/circles -->
